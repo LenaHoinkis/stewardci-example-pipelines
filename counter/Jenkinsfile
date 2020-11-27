@@ -1,6 +1,7 @@
 node {
   stage("Count") {
     sh '''
+      set +x
       for i in $(seq 1 10000)
       do
         echo Line $i
